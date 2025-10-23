@@ -45,7 +45,7 @@ header {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #ffcc00;
+  color: #c0091e;
 }
 
 .hero {
@@ -75,7 +75,7 @@ header {
 
 .btn {
   display: inline-block;
-  background-color: #ffcc00;
+  background-color: #c0091e;
   color: #000;
   padding: 0.8rem 1.6rem;
   border-radius: 50px;
@@ -85,7 +85,7 @@ header {
 }
 
 .btn:hover {
-  background-color: #ffd633;
+  background-color: #f56868;
   transform: scale(1.05);
 }
 
@@ -98,7 +98,7 @@ footer {
 }
 
 footer a {
-  color: #ffcc00;
+  color: #c0091e;
   text-decoration: none;
 }
 
@@ -118,5 +118,95 @@ footer a:hover {
 
   .hero-content p {
     font-size: 1rem;
+  }
+}
+
+
+.burger {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+
+#burger-toggle {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .burger {
+    display: flex;
+  }
+
+  header {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 64px; 
+    right: 0;
+    width: 220px;
+    background: #111;
+    border-radius: 6px;
+    overflow: hidden;
+    max-height: 0; 
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.35s ease;
+    z-index: 50;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.9rem 1.2rem;
+    color: #fff;
+  }
+
+
+  #burger-toggle:checked ~ .nav-menu {
+    max-height: 400px;
+    opacity: 1;
+  }
+
+
+  #burger-toggle:checked + .burger span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+  #burger-toggle:checked + .burger span:nth-child(2) {
+    opacity: 0;
+  }
+  #burger-toggle:checked + .burger span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
+
+  .nav-links {
+    gap: 0;
   }
 }
