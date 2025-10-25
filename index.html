@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Power Auto - Accueil</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylee.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="logoSite.ico">
 </head>
+
+
 <body>
+<header class="site-header">
+  <div class="logo">
+    <img src="logoSite.png" alt="Logo Power Auto">
+    <span class="brand-name">Power Auto</span>
+  </div>
 
-<header>
-  <div class="logo">⚡ Power Auto</div>
-
-  <input type="checkbox" id="burger-toggle">
-
+  <input type="checkbox" id="burger-toggle" />
   <label for="burger-toggle" class="burger" aria-label="Menu">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span></span><span></span><span></span>
   </label>
 
   <nav class="nav-menu">
@@ -29,26 +35,130 @@
   </nav>
 </header>
 
+</body>
+</html>
+
 <section class="hero">
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="video_voiture3.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas la vidéo en arrière-plan.
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="Zachdream.mp4" type="video/mp4">
   </video>
 
-  <div class="hero-overlay"></div>
-
   <div class="hero-content">
+    <div class="titre">
     <h1>Bienvenue chez Power Auto</h1>
-    <p>Votre partenaire de confiance pour les pièces et accessoires automobiles de qualité.</p>
-    <a href="boutique.html" class="btn">Découvrir la boutique</a>
+    <p>Votre partenaire de confiance pour les pièces et accessoires automobiles de qualité.</p></div>
+    <a href="boutique.html" class="btn"><div class="decouverte"><p>Découvrir la boutique</p></div></a>
   </div>
 </section>
-  
+
+
+<section class="about-section">
+  <h2>Qui sommes-nous ?</h2>
+  <p>
+    Chez <strong>Power Auto</strong>, nous sommes passionnés par la mécanique et la performance automobile.  
+    Notre mission est d’offrir à chaque conducteur des pièces fiables, performantes et accessibles, adaptées à son véhicule.  
+    Grâce à notre équipe d’experts et nos partenaires reconnus, nous garantissons un service rapide et de qualité, 
+    pour que vous rouliez toujours en toute confiance.
+  </p>
+</section>
+
+<section class="piece-section">
+  <div class="piece-text">
+    <h2>Performance et Fiabilité</h2>
+    <p>
+      Nos pièces automobiles sont conçues pour offrir une durabilité maximale et des performances optimales. 
+      Que vous soyez passionné de sport automobile ou simplement soucieux de la qualité, Power Auto vous garantit 
+      des produits testés et approuvés.
+    </p>
+  </div>
+
+  <div class="piece-image">
+    <img src="pieceAutoperf" alt="Pièce automobile">
+  </div>
+</section>
+
+
+
+<div class="slider">
+  <div class="slide-track">
+
+    <div class="slide"><img src="audi.png" height="150" width="200" alt=""></div>
+    <div class="slide"><img src="mazda.png" height="150" width="250" alt=""></div>
+    <div class="slide"><img src="FErrari.png" height="200" width="200" alt=""></div>
+    <div class="slide"><img src="lotus.png" height="150" width="175" alt=""></div>
+    <div class="slide"><img src="mercedes.png" height="150" width="150" alt=""></div>
+    <div class="slide"><img src="Nissan.png" height="150" width="175" alt=""></div>
+    <div class="slide"><img src="honda.png" height="150" width="200" alt=""></div>
+    <div class="slide"><img src="Dodge.png" height="170" width="200" alt=""></div>
+    <div class="slide"><img src="BMW.png" height="175" width="175" alt=""></div>
+    <div class="slide"><img src="lexus.png" height="175" width="175" alt=""></div>
+    <div class="slide"><img src="volkswagen.png" height="200" width="240" alt=""></div>
+    <div class="slide"><img src="acura.png" height="180" width="220" alt=""></div>
+
+
+    <div class="slide"><img src="audi.png" height="150" width="200" alt=""></div>
+    <div class="slide"><img src="mazda.png" height="150" width="250" alt=""></div>
+    <div class="slide"><img src="FErrari.png" height="200" width="200" alt=""></div>
+    <div class="slide"><img src="lotus.png" height="150" width="175" alt=""></div>
+    <div class="slide"><img src="mercedes.png" height="150" width="150" alt=""></div>
+    <div class="slide"><img src="Nissan.png" height="150" width="175" alt=""></div>
+    <div class="slide"><img src="honda.png" height="150" width="200" alt=""></div>
+    <div class="slide"><img src="Dodge.png" height="170" width="200" alt=""></div>
+    <div class="slide"><img src="BMW.png" height="175" width="175" alt=""></div>
+    <div class="slide"><img src="lexus.png" height="175" width="175" alt=""></div>
+    <div class="slide"><img src="volkswagen.png" height="200" width="240" alt=""></div>
+    <div class="slide"><img src="acura.png" height="150" width="200" alt=""></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<section class="info-section">
+  <div class="info-block">
+    <span class="info-icon">
+      <img src="rapide.png" alt="Identification" />
+    </span>
+    <h3>Identification rapide</h3>
+    <p>
+      Entrez simplement votre plaque d’immatriculation et laissez notre système intelligent faire le reste.
+En quelques secondes, nous identifions précisément le modèle, la motorisation et l’année de votre véhicule.
+Vous accédez ainsi uniquement aux pièces 100 % compatibles, sans risque d’erreur ni perte de temps.
+    </p>
+  </div>
+  <div class="info-block">
+    <span class="info-icon">
+      <img src="qualite.png" alt="Identification" />
+    </span>
+    <h3>Qualité certifiée</h3>
+    <p>
+      Toutes nos pièces sont rigoureusement testées avant mise en vente, afin de garantir performance, fiabilité et sécurité.
+Nous travaillons exclusivement avec des fabricants reconnus pour leur excellence et leur conformité aux normes européennes.
+Chez Power Auto, chaque produit est synonyme de longévité et de satisfaction client.
+    </p>
+  </div>
+  <div class="info-block">
+    <span class="info-icon">
+      <img src="livraison-rapide.png" alt="Identification" />
+    </span>
+    <h3>Livraison & Service</h3>
+    <p>
+      Bénéficiez d’une livraison rapide partout en France grâce à nos partenaires logistiques spécialisés dans le transport automobile.
+En cas de doute, notre service client est composé de véritables passionnés de mécanique ,et est disponible pour vous conseiller et vous assister.
+Votre satisfaction est notre priorité . De la commande à la réception, nous vous accompagnons à chaque étape.
+    </p>
+  </div>
+</section>
+
+
 <footer>
   <div class="footer-container">
 
     <div class="footer-logo">
-      ⚡ <span>Power Auto</span>
+       <span>Power Auto</span>
     </div>
 
     <nav class="footer-nav">
@@ -68,7 +178,5 @@
 
   </div>
 </footer>
-
-
 </body>
 </html>
