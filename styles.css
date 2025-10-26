@@ -985,10 +985,6 @@ select:disabled {
 }
 
 /* Bouton "Continuer mes achats" */
-.continuer-achats {
-  text-align: left;
-  margin-top: 30px;
-}
 
 .btn-continuer {
   background-color: white;
@@ -999,6 +995,7 @@ select:disabled {
   border-radius: 40px;
   padding: 10px 20px;
   transition: all 0.2s ease;
+  text-align: left;
 }
 
 .btn-continuer:hover {
@@ -1029,9 +1026,6 @@ select:disabled {
 }
 
 /* Bouton principal (paiement) */
-.div-payer {
-  text-align: right;
-}
 
 .actions {
   margin-top: 30px;
@@ -1046,6 +1040,7 @@ select:disabled {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.15s ease;
+  text-align: right;
 }
 
 .payer:hover {
