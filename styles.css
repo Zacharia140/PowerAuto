@@ -1024,6 +1024,7 @@ select:disabled {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.15s ease;
+  gap: 5em;
   text-align: right;
 }
 
