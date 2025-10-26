@@ -979,13 +979,28 @@ select:disabled {
   color: red;
 }
 
-/* Bas du panier */
-.bas-panier {
+/* Bouton "Continuer mes achats" */
+.continuer-achats {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
 }
+
+.btn-continuer {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+}
+
+.btn-continuer:hover {
+  background-color: red;
+  color: white;
+}
+
 
 .config-vehicule {
   display: flex;
