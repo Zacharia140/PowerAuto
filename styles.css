@@ -505,48 +505,41 @@ a img:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Boutique*/
 .shop-hero {
-  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://img3.wallspic.com/previews/0/1/4/6/4/146410/146410-ciel-voiture_tuning-voiture_de_luxe_personnels-leclairage_automobile-voiture_de_taille_moyenne-x750.jpg') center/cover;
   text-align: center;
   color: #fff;
-  overflow: hidden;
   padding: 6rem 2rem;
-}
-
-.shop-hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.shop-hero-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(40%);
-}
-
-.shop-hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 1740px;
-  margin: 0 auto;
-}
-
-.shop-hero-content h1 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-}
-
-.shop-hero-content p {
-  font-size: 1.4rem;
-  line-height: 1.6;
 }
 
 .shop-hero p {
@@ -671,6 +664,14 @@ select:disabled {
   cursor: not-allowed;
 }
 
+.shop-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+/* ---- Section filtres ---- */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -683,6 +684,7 @@ select:disabled {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
 }
 
+/* Groupe label + select */
 .filter-group {
   display: flex;
   flex-direction: column;
@@ -692,7 +694,7 @@ select:disabled {
 
 .filter-group label {
   display: inline-block;
-  width: 200px;
+  width: 200px; /* Ajuste selon ton goût : 120px, 160px... */
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
@@ -700,6 +702,8 @@ select:disabled {
   font-size: 0.9rem;
 }
 
+
+/* ---- Style des listes déroulantes ---- */
 .filters select {
   background: #111;
   color: #fff;
@@ -730,11 +734,13 @@ select:disabled {
   transform: scale(1.03);
 }
 
+/* Quand le select est désactivé */
 .filters select:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
   .filters {
     flex-direction: column;
@@ -742,6 +748,7 @@ select:disabled {
   }
 }
 
+/* ---- MODAL PRODUIT ---- */
 .modal {
   display: none;
   position: fixed;
@@ -859,7 +866,6 @@ select:disabled {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-
 
 /* Conteneur global du panier */
 .panier {
