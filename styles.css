@@ -861,15 +861,66 @@ select:disabled {
 }
 
 
-/* Conteneur de la zone quantité */
+/* Conteneur global du panier */
+.panier {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Ligne d’un produit */
+.ligne-produit {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+/* Image du produit */
+.image-produit {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Bloc infos produit (nom + catégorie) */
+.infos-produit {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.nom-produit {
+  font-weight: bold;
+}
+
+.categorie-produit {
+  font-size: 14px;
+  color: gray;
+  margin-top: 5px;
+}
+
+/* Compatibilité */
+.compatibilite {
+  color: gray;
+  width: 60px;
+  text-align: center;
+}
+
+/* Zone quantité */
 .quantite {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  width: 100px;
 }
 
-/* Boutons + et - */
 .quantite button {
   width: 30px;
   height: 30px;
@@ -882,23 +933,106 @@ select:disabled {
   transition: all 0.15s ease;
 }
 
-/* Effet au survol */
 .quantite button:hover {
   background-color: #f5f5f5;
   border-color: #999;
 }
 
-/* Animation au clic (effet “pressé”) */
 .quantite button:active {
   transform: scale(0.9);
   background-color: #eaeaea;
 }
 
-/* Nombre au centre */
 .quantite .valeur {
   font-weight: bold;
   font-size: 16px;
   width: 24px;
   text-align: center;
   user-select: none;
+}
+
+/* Prix */
+.prix {
+  width: 80px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Bouton supprimer */
+.supprimer {
+  margin-left: 15px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.supprimer:hover {
+  color: red;
+}
+
+/* Bas du panier */
+.bas-panier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.config-vehicule {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.config-vehicule .icone {
+  color: red;
+  font-size: 20px;
+}
+
+.total {
+  text-align: right;
+}
+
+.texte-calcul {
+  color: gray;
+  font-size: 14px;
+}
+
+.montant {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.montant .ttc {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Bouton principal (paiement) */
+.actions {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.payer {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.payer:hover {
+  background-color: #d10000;
+}
+
+.payer:active {
+  transform: scale(0.97);
 }
