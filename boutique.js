@@ -4,37 +4,37 @@ const data = {
       { 
         name: "Turbo Compresseur (F30 / F80)", 
         price: "899€", 
-        img: "https://www.mister-turbo.com/25949-thickbox_default/turbo-pour-bmw-m3-30-f80-30-431-cv-49335-02054.jpg", 
+        img: "TurboBMW.jpg", 
         desc: "Ce turbo compresseur haute performance pour BMW M3 (F30/F80) améliore considérablement la puissance et la réactivité du moteur. Conçu en alliage renforcé, il offre une montée en pression rapide et une durabilité exceptionnelle, idéal pour une conduite sportive exigeante." 
       },
       { 
         name: "Filtre à air sport", 
         price: "73€", 
-        img: "https://strperformance.com/46570-thickbox_default/filtres-a-air-sport-bmc-13201-pour-bmw-m3-e46-32-343cv.jpg", 
+        img: "FiltreBMW.jpg", 
         desc: "Ce filtre à air sport BMC améliore le flux d’air vers le moteur tout en assurant une filtration optimale. Résultat : un gain de performance, un meilleur son moteur et une consommation réduite." 
       },
       { 
         name: "Bougie", 
         price: "23€", 
-        img: "https://www.shop.japanautosperformances.fr/3901-large_default/8x-bougie-ngk-lkr8ap-pour-bmw-m3-v8-e9x-s%C3%A9rie-e.jpg", 
+        img: "BougieBMW.jpg", 
         desc: "Bougies hautes performances, conçues pour une combustion optimale et une réponse moteur plus fluide. Idéales pour les moteurs sportifs exigeant fiabilité et précision d’allumage." 
       },
       { 
         name: "Pompe à essence haute pression", 
         price: "249€", 
-        img: "https://www.driftshop.fr/media/catalog/product/1/3/1/9/6/7/xlarge-c067bc500ed86a088434f41fee65d000.jpg", 
+        img: "PompeBMW.jpg", 
         desc: "Pompe à essence haute pression spécialement calibrée pour la BMW M3. Elle garantit un débit constant, même à haut régime, assurant une alimentation parfaite du moteur en toutes circonstances." 
       },
       { 
         name: "Injecteurs performance", 
         price: "168€", 
-        img: "https://www.speedingparts.fr/thumb/27876/1024x0/Bosch-Motorsport--injector-1100cc.jpg",
+        img: "InjecteurBMW.jpg",
         desc: "Injecteurs Bosch Motorsport haute précision. Améliorent la pulvérisation du carburant pour une combustion plus homogène et une puissance accrue. Idéals pour les préparations moteur." 
       },
       { 
         name: "Radiateur en alu", 
         price: "349€", 
-        img: "https://www.dtmparts.com/upload/image/radiateur-en-alu-bmw-m3-e46-p-image-79461-grande.jpg", 
+        img: "RadiateurBMW.jpg", 
         desc: "Radiateur en aluminium renforcé à haut rendement. Permet une dissipation thermique supérieure, évitant toute surchauffe même lors de sessions intensives sur circuit." 
       }
     ],
@@ -43,37 +43,37 @@ const data = {
       { 
         name: "Kit admission Forge", 
         price: "916€", 
-        img: "https://www.suprcars.fr/118169-large_default/admission-carbone-forge-pour-audi-rs3-8v2-25-tfsi-400ch-2017-2020.jpg", 
+        img: "KitadmissionAUDI.jpg", 
         desc: "Le kit d’admission Forge en carbone améliore le flux d’air et la sonorité moteur. Il augmente la puissance et offre une esthétique haut de gamme sous le capot." 
       },
       { 
         name: "Kit piston", 
         price: "2469€", 
-        img: "https://www.ecodetuning.com/images/product/EC0414-0301-Eurocode-piston-rod-combo-rs3-ttrs-3_2.png", 
+        img: "KitpistonAUDI.jpg", 
         desc: "Kit piston forgé haute résistance conçu pour les moteurs turbo. Permet une meilleure compression et supporte des pressions extrêmes lors de préparations moteur." 
       },
       { 
         name: "Turbo hybride", 
         price: "3000€", 
-        img: "https://www.turbobyintec.com/2110/turbo-hybride-ttrs-et-rs3-5-cyl-25-tfsi-340-cv.jpg", 
+        img: "TurboAUDI.jpg", 
         desc: "Turbo hybride Intec pour Audi RS3, offrant un équilibre parfait entre puissance et fiabilité. Optimisé pour une montée en pression plus rapide et une poussée prolongée." 
       },
       { 
         name: "Intercooler Wagner Evo", 
         price: "177€", 
-        img: "https://www.ultraperformance.fr/sites/default/files/images/moteur/echangeurs/wagner-tuning/wagner-tuning-echangeurs-intercooler-performance-competition.jpg", 
+        img: "IntercoolerAUDI.jpg", 
         desc: "Intercooler Wagner EVO, conçu pour réduire les températures d’admission et améliorer la performance du moteur. Construction robuste et flux d’air optimisé." 
       },
       { 
         name: "Kit durites silicone rouge", 
         price: "400€", 
-        img: "https://www.gt2i.ch/312986-facebook_large/kit-durites-silicone-turbo-5-durites-incluant-durite-aluminium-70-mm-rs3-8v2-8y-ttrs.jpg", 
+        img: "KitduriteAUDI.jpg", 
         desc: "Kit de durites silicone rouge résistant aux hautes températures. Améliore la fiabilité du circuit d’air et apporte une touche racing au compartiment moteur." 
       },
       { 
         name: "Collecteur inox", 
         price: "1999€", 
-        img: "https://www.dprturbo.fr/wp-content/uploads/2017/10/dprturbo-Collecteur-Audi-TT-RS-_1-1.jpg", 
+        img: "CollecteurAUDI.jpg", 
         desc: "Collecteur d’échappement en inox poli, optimisé pour le flux des gaz. Augmente la réactivité du turbo et offre une sonorité plus agressive." 
       }
     ],
@@ -90,25 +90,25 @@ const data = {
       { 
         name: "Kit Freins", 
         price: "1577€", 
-        img: "https://ceikaperformance.fr/cdn/shop/products/CEIKA_Custom_Big_Brake_Kit_heic_39c05ae8-0624-4253-a0c4-4e84e4685da9_2000x.jpg?v=1704016171", 
+        img: "KitfreinNISSAN.jpg", 
         desc: "Kit complet de freinage haute performance Ceika pour Nissan GT-R. Étriers monoblocs en aluminium et disques ventilés assurent un freinage précis et constant, même en conditions extrêmes." 
       },
       { 
         name: "Plaquettes de frein", 
         price: "434€", 
-        img: "https://www.ultraperformance.fr/sites/default/files/images/freinage/plaquettes/pfc/pfc-plaquettes-frein.jpeg", 
+        img: "PlaquetteNISSAN.jpg", 
         desc: "Plaquettes de frein haute friction conçues pour une endurance maximale. Excellente stabilité thermique et usure homogène pour un contrôle total du freinage." 
       },
       { 
         name: "Disques Avant ventilés sport", 
         price: "567€", 
-        img: "https://www.driftshop.fr/media/catalog/product/1/8/3/3/8/8/xlarge-pfc-discs-v3-generic1.jpg", 
+        img: "DisqueNISSAN.jpg", 
         desc: "Disques avant ventilés sport en acier traité. Offrent une dissipation thermique optimale et réduisent considérablement le fading à haute température." 
       },
       { 
         name: "Durites aviation", 
         price: "278€", 
-        img: "https://www.ultraperformance.fr/sites/default/files/images/freinage/durites/hel/hel-performance-durites-frein-aviation-4-transparent.jpg", 
+        img: "DuriteNISSAN.jpg", 
         desc: "Durites aviation en téflon et tresse inox pour une meilleure résistance à la pression. Améliorent la sensation à la pédale et la constance du freinage." 
       },
     ],
@@ -117,19 +117,19 @@ const data = {
       { 
         name: "Disques Avant céramique", 
         price: "2499€", 
-        img: "https://www.suprcars.fr/120117-thickbox_default/disques-de-freins-avant-girodisc-pour-porsche-992-gt3-rs-gt3-origine-c%C3%A9ramique.jpg", 
+        img: "DisquePORSCHE.jpg", 
         desc: "Disques avant en céramique ultra-légers. Réduisent la masse non suspendue et assurent un freinage constant même après plusieurs tours de circuit." 
       },
       { 
         name: "LOT 4 Étriers 4 pistons jaunes", 
         price: "416€", 
-        img: "https://www.design911.com/uploads/products/0832f10c-bd66-4b07-bbff-7264aca6fc1c/3604209302_1.jpg", 
+        img: "EtrierPORSCHE.jpg", 
         desc: "Jeu complet d’étriers à 4 pistons anodisés jaunes. Combine puissance, légèreté et esthétique agressive typique de la GT3 RS." 
       },
       { 
         name: "Plaquettes de frein", 
         price: "778€", 
-        img: "https://www.design911.com/uploads/products/444426c5-2546-42d3-872b-5a093a98ce5f/9GT698151T_1.jpg", 
+        img: "PlaquettePORSCHE.jpg", 
         desc: "Plaquettes haut de gamme Pagid RS conçues pour un mordant immédiat et une résistance extrême à la chaleur. Recommandées pour une conduite sportive intensive." 
       }
     ]
