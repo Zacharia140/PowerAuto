@@ -1031,6 +1031,9 @@ select:disabled {
 /* Bouton principal (paiement) */
 .div-payer {
   text-align: right;
+}
+
+.actions {
   margin-top: 30px;
 }
 
