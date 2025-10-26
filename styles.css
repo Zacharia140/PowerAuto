@@ -9,9 +9,12 @@ body {
   color: #222;
   background-color: #c0091e;
   line-height: 1.6;
-
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
 
 .piece-section {
   display: flex;
@@ -24,8 +27,6 @@ body {
   z-index: 2;
   
 }
-
-
 
 .piece-text {
   flex: 1;
@@ -120,6 +121,7 @@ header {
   color: #fff;
   text-align: center;
   overflow: hidden;
+  animation: fadeIn 1.5s ease-in-out;
 }
 .Piece {
   top: 20px;
@@ -505,41 +507,48 @@ a img:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Boutique*/
 .shop-hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://img3.wallspic.com/previews/0/1/4/6/4/146410/146410-ciel-voiture_tuning-voiture_de_luxe_personnels-leclairage_automobile-voiture_de_taille_moyenne-x750.jpg') center/cover;
+  position: relative;
   text-align: center;
   color: #fff;
+  overflow: hidden;
   padding: 6rem 2rem;
+}
+
+.shop-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.shop-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.shop-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1740px;
+  margin: 0 auto;
+}
+
+.shop-hero-content h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.shop-hero-content p {
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 .shop-hero p {
@@ -664,14 +673,6 @@ select:disabled {
   cursor: not-allowed;
 }
 
-.shop-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 3rem 2rem;
-}
-
-/* ---- Section filtres ---- */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -684,7 +685,6 @@ select:disabled {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
 }
 
-/* Groupe label + select */
 .filter-group {
   display: flex;
   flex-direction: column;
@@ -694,7 +694,7 @@ select:disabled {
 
 .filter-group label {
   display: inline-block;
-  width: 200px; /* Ajuste selon ton goût : 120px, 160px... */
+  width: 200px;
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
@@ -702,8 +702,6 @@ select:disabled {
   font-size: 0.9rem;
 }
 
-
-/* ---- Style des listes déroulantes ---- */
 .filters select {
   background: #111;
   color: #fff;
@@ -734,13 +732,11 @@ select:disabled {
   transform: scale(1.03);
 }
 
-/* Quand le select est désactivé */
 .filters select:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .filters {
     flex-direction: column;
@@ -748,7 +744,6 @@ select:disabled {
   }
 }
 
-/* ---- MODAL PRODUIT ---- */
 .modal {
   display: none;
   position: fixed;
@@ -869,6 +864,7 @@ select:disabled {
 
 
 
+
 /* PAGE PANIER*/
 
 
@@ -970,10 +966,6 @@ select:disabled {
   color: red;
 }
 
-
-
-/* Bouton "Continuer mes achats" */
-
 .btn-continuer {
   background-color: white;
   border: 2px solid red;
@@ -984,6 +976,7 @@ select:disabled {
   padding: 10px 20px;
   transition: all 0.2s ease;
   text-align: left;
+  font-size: 16px
 }
 
 .btn-continuer:hover {
@@ -1026,6 +1019,7 @@ select:disabled {
   transition: background-color 0.2s ease, transform 0.15s ease;
   gap: 5em;
   text-align: right;
+  font-size: 16px;
 }
 
 .payer:hover {
@@ -1035,3 +1029,175 @@ select:disabled {
 .payer:active {
   transform: scale(0.97);
 }
+
+
+
+
+
+
+
+
+/*A propos*/
+
+body.apropos-page {
+  background: #c0091e;
+  color: #222;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+  font-size: 25px;
+}
+
+.apropos-page main {
+  background: #ffffff;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.7s ease;
+}
+
+.apropos-page h2 {
+  text-align: center;
+  color: #c0091e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.apropos-page p {
+  text-align: left;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.about {
+  margin-bottom: 4rem;
+}
+.about strong {
+  color: #c0091e;
+}
+
+.values {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin-bottom: 4rem;
+  border-top: 2px solid #c0091e25;
+  border-bottom: 2px solid #c0091e25;
+}
+
+.values-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap; 
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.value-card {
+  flex: 1 1 240px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 260px; 
+}
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.value-card i {
+  font-size: 2em;
+  color: #c0091e;
+  margin-bottom: 10px;
+}
+.value-card h3 {
+  color: #111;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+.value-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.engagements {
+  margin-bottom: 4rem;
+}
+.engagements ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.2rem;
+}
+.engagements li {
+  margin: 10px 0;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+}
+.engagements i {
+  color: #c0091e;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.founders {
+  background: #fafafa;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+}
+
+.creators {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.creator {
+  flex: 1 1 240px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 260px;
+}
+.creator:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.creator h3 {
+  color: #c0091e;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.creator p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .apropos-page main {
+    padding: 2rem 1rem;
+  }
+
+  .values-container,
+  .creators {
+    justify-content: center;
+  }
+}
+
