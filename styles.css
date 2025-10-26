@@ -985,8 +985,8 @@ select:disabled {
 
 /* Bouton "Continuer mes achats" */
 .continuer-achats {
-  display: flex;
-  align-items: center;
+  text-align: left;
+  margin-top: 30px;
 }
 
 .btn-continuer {
