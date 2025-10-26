@@ -354,6 +354,16 @@ header {
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
+a img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+a img:hover {
+  transform: scale(1.05);
+}
+
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -530,6 +540,10 @@ header {
   text-align: center;
   color: #fff;
   padding: 6rem 2rem;
+}
+
+.shop-hero p {
+  font-size: 25px;
 }
 
 .shop-hero h1 {
