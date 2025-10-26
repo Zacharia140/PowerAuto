@@ -867,7 +867,11 @@ select:disabled {
   border: 0;
 }
 
+
+
 /* Conteneur global du panier */
+
+
 .panier {
   background-color: white;
   border-radius: 20px;
@@ -1002,16 +1006,6 @@ select:disabled {
 }
 
 
-.config-vehicule {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.config-vehicule .icone {
-  color: red;
-  font-size: 20px;
-}
 
 .total {
   text-align: right;
