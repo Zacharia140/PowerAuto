@@ -195,12 +195,6 @@ modelSelect.addEventListener("change", () => {
   productsContainer.appendChild(card);
 });
 
-document.querySelectorAll(".btn").forEach(button => {
-  button.addEventListener("click", () => {
-    window.location.href = "panier.html";
-  });
-});
-
   }
 });
 
