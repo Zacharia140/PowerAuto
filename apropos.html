@@ -9,57 +9,143 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="logoSite.ico">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-<header class="site-header">
-  <div class="logo">
-    <a href="index.html">
-      <img src="logoSite.png" alt="Logo Power Auto">
-    </a>
-    <span class="brand-name">Power Auto</span>
-  </div>
+<body class="apropos-page">
 
-  <input type="checkbox" id="burger-toggle" />
-  <label for="burger-toggle" class="burger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </label>
-
-  <nav class="nav-menu">
-    <ul class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="boutique.html">Boutique</a></li>
-      <li><a href="panier.html">Panier</a></li>
-      <li><a href="apropos.html" class="active">À propos</a></li>
-    </ul>
-  </nav>
-</header>
-
-<footer>
-  <div class="footer-container">
-
-    <div class="footer-logo">
-       <span>Power Auto</span>
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logoSite.png" alt="Logo Power Auto">
+      </a>
+      <span class="brand-name">Power Auto</span>
     </div>
 
-    <nav class="footer-nav">
-      <ul>
+    <input type="checkbox" id="burger-toggle" />
+    <label for="burger-toggle" class="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav-menu">
+      <ul class="nav-links">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="boutique.html">Boutique</a></li>
         <li><a href="panier.html">Panier</a></li>
-        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="apropos.html" class="active">À propos</a></li>
       </ul>
     </nav>
+  </header>
 
-    <div class="footer-links">
-      <a href="#">Mentions légales</a>
-      <a href="#">Politique de confidentialité</a>
+  <main>
+    
+    <section class="about-hero">
+      <div class="overlay"></div>
+      <div class="about-hero-content">
+        <h1>À propos de Power Auto</h1>
+        <p>Une passion pour la performance, la précision et l’excellence automobile.</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>Notre Histoire</h2>
+      <p>
+        <strong>Power Auto</strong> est née le <span id="creation-date">12 mars 2020</span> 
+        grâce à quatre amis passionnés : <strong>Ayoub</strong>, <strong>Samih</strong>, 
+        <strong>Mehdi</strong> et <strong>Zackaria</strong>.
+      </p>
+      <p>
+        Ensemble, nous avons remarqué que les conducteurs peinaient à trouver des pièces de qualité à prix raisonnable.
+        C’est de ce constat qu’est née notre idée : rendre l’entretien automobile plus simple, plus rapide, et surtout plus abordable pour tous.
+      </p>
+      <p>
+        Aujourd’hui, Power Auto s’impose comme une référence dans la vente en ligne de pièces détachées, grâce à notre service client réactif, notre logistique maîtrisée et notre engagement envers la satisfaction des automobilistes.
+      </p>
+    </section>
+
+    <section class="values">
+      <h2>Nos Valeurs</h2>
+      <div class="values-container">
+        <div class="value-card">
+          <i class="fas fa-handshake"></i>
+          <h3>Confiance</h3>
+          <p>Nous croyons qu’une bonne relation client repose sur la transparence et la fiabilité.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Innovation</h3>
+          <p>Nous innovons constamment pour offrir une expérience fluide et intuitive à nos clients.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-users"></i>
+          <h3>Esprit d’équipe</h3>
+          <p>Notre équipe soudée avance avec une passion commune : simplifier la vie des automobilistes.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-globe-europe"></i>
+          <h3>Engagement durable</h3>
+          <p>Nous privilégions des partenaires responsables pour réduire notre empreinte environnementale.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="engagements">
+      <h2>Nos Engagements</h2>
+      <p>Chez Power Auto, chaque client est au cœur de nos priorités. Nous nous engageons à :</p>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Offrir des prix justes et transparents, sans compromis sur la qualité.</li>
+        <li><i class="fas fa-check-circle"></i> Proposer un service client réactif disponible 7j/7.</li>
+        <li><i class="fas fa-check-circle"></i> Garantir une livraison rapide dans toute la France.</li>
+        <li><i class="fas fa-check-circle"></i> Sélectionner uniquement des pièces certifiées et testées.</li>
+      </ul>
+    </section>
+    
+    <section class="founders">
+      <h2>Les Fondateurs</h2>
+      <div class="creators">
+        <div class="creator">
+          <h3>Ayoub</h3>
+          <p>Responsable technique — Toujours à la recherche des meilleures solutions logicielles pour le site.</p>
+        </div>
+        <div class="creator">
+          <h3>Samih</h3>
+          <p>Directeur marketing — Passionné par les stratégies digitales et la satisfaction client.</p>
+        </div>
+        <div class="creator">
+          <h3>Mehdi</h3>
+          <p>Responsable logistique — Expert dans la gestion des stocks et l’efficacité des livraisons.</p>
+        </div>
+        <div class="creator">
+          <h3>Zacharia</h3>
+          <p>Support client — Toujours à l’écoute pour trouver la solution adaptée à chaque client.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span>Power Auto</span>
+      </div>
+
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="panier.html">Panier</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+      </div>
+      <p class="footer-credit">© <span id="year"></span> Power Auto — Conçu par <strong>Samih OZ</strong></p>
     </div>
-    <p class="footer-credit">© 2025 Power Auto — Conçu par <strong>Samih OZ</strong></p>
+  </footer>
 
-  </div>
-</footer>
-
-
+  <script src="panier.js"></script>
 </body>
 </html>
