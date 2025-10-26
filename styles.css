@@ -979,6 +979,7 @@ select:disabled {
   transition: color 0.2s ease;
 }
 
+
 .supprimer:hover {
   color: red;
 }
