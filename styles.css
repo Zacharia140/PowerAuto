@@ -122,7 +122,6 @@ header {
   color: #fff;
   text-align: center;
   overflow: hidden;
-  animation: fadeIn 1.5s ease-in-out;
 }
 .Piece {
   top: 20px;
