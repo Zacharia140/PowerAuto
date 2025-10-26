@@ -987,7 +987,7 @@ select:disabled {
 /* Bouton "Continuer mes achats" */
 .continuer-achats {
   text-align: left;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .btn-continuer {
@@ -1029,7 +1029,7 @@ select:disabled {
 }
 
 /* Bouton principal (paiement) */
-.actions {
+.div-payer {
   text-align: right;
   margin-top: 30px;
 }
