@@ -869,7 +869,7 @@ select:disabled {
 
 
 
-/* Conteneur global du panier */
+/* PAGE PANIER*/
 
 
 .panier {
@@ -883,7 +883,6 @@ select:disabled {
   color: #333;
 }
 
-/* Ligne d’un produit */
 .ligne-produit {
   display: flex;
   align-items: center;
@@ -891,7 +890,6 @@ select:disabled {
   padding-bottom: 20px;
 }
 
-/* Image du produit */
 .image-produit {
   width: 80px;
   height: 80px;
@@ -899,7 +897,6 @@ select:disabled {
   object-fit: cover;
 }
 
-/* Bloc infos produit (nom + catégorie) */
 .infos-produit {
   margin-left: 20px;
   flex: 1;
@@ -915,14 +912,6 @@ select:disabled {
   margin-top: 5px;
 }
 
-/* Compatibilité */
-.compatibilite {
-  color: gray;
-  width: 60px;
-  text-align: center;
-}
-
-/* Zone quantité */
 .quantite {
   display: flex;
   align-items: center;
@@ -961,14 +950,12 @@ select:disabled {
   user-select: none;
 }
 
-/* Prix */
 .prix {
   width: 80px;
   text-align: right;
   font-weight: bold;
 }
 
-/* Bouton supprimer */
 .supprimer {
   margin-left: 15px;
   border: none;
@@ -979,10 +966,11 @@ select:disabled {
   transition: color 0.2s ease;
 }
 
-
 .supprimer:hover {
   color: red;
 }
+
+
 
 /* Bouton "Continuer mes achats" */
 
@@ -1003,8 +991,6 @@ select:disabled {
   color: white;
 }
 
-
-
 .total {
   text-align: right;
 }
@@ -1024,8 +1010,6 @@ select:disabled {
   font-size: 14px;
   color: gray;
 }
-
-/* Bouton principal (paiement) */
 
 .actions {
   margin-top: 30px;
