@@ -505,34 +505,6 @@ a img:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Boutique*/
 .shop-hero {
   position: relative;
@@ -542,7 +514,6 @@ a img:hover {
   padding: 6rem 2rem;
 }
 
-/* Image de fond */
 .shop-hero-bg {
   position: absolute;
   top: 0;
@@ -700,7 +671,6 @@ select:disabled {
   cursor: not-allowed;
 }
 
-/* ---- Section filtres ---- */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -713,7 +683,6 @@ select:disabled {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
 }
 
-/* Groupe label + select */
 .filter-group {
   display: flex;
   flex-direction: column;
@@ -723,7 +692,7 @@ select:disabled {
 
 .filter-group label {
   display: inline-block;
-  width: 200px; /* Ajuste selon ton goût : 120px, 160px... */
+  width: 200px;
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
@@ -731,8 +700,6 @@ select:disabled {
   font-size: 0.9rem;
 }
 
-
-/* ---- Style des listes déroulantes ---- */
 .filters select {
   background: #111;
   color: #fff;
@@ -763,13 +730,11 @@ select:disabled {
   transform: scale(1.03);
 }
 
-/* Quand le select est désactivé */
 .filters select:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .filters {
     flex-direction: column;
@@ -777,7 +742,6 @@ select:disabled {
   }
 }
 
-/* ---- MODAL PRODUIT ---- */
 .modal {
   display: none;
   position: fixed;
