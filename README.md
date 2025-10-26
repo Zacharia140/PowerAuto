@@ -13,6 +13,9 @@ Zacharia Mehidi
 ## Pages 
 
 Page d'accueil (index.html)
+
 Page Boutique
+
 Page Panier 
+
 Page À propos 
